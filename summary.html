@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Summary</title>
+  </head>
+  <body>
+    <div>
+      <br />
+      <a href="./index.html">Index</a>&nbsp;&nbsp;
+      <a href="./ordered-by-mean.html">Ordered by Means</a>&nbsp;&nbsp;
+      <a href="./ordered-by-std.html">Ordered by Standard Deviations</a
+      >&nbsp;&nbsp;
+      <a href="./ordered-by-gap.html">Ordered by Training/Testing Gaps</a
+      >&nbsp;&nbsp;
+      <a><b>Class Summary Scatter Plot</b></a>
+      <hr />
+    </div>
+    <h1>Class Summary</h1>
+    <ul>
+      <li>
+        Tick marks for the means represent the 50th and 90th percentiles. Larger
+        values indicate higher mean accuracy on the 15 hidden test sets.
+      </li>
+      <br />
+      <li>
+        Tick marks for the standard deviations represent the 10th and 50th
+        percentiles. Smaller values indicate more consistent performance on the
+        15 hidden test sets.
+      </li>
+      <br />
+      <li>
+        Bubble sizes are inversely proportional to the gap between training and
+        testing scores on the initial 2k5h set. Larger bubbles indicate models
+        that would have been assessed as less overfit during training.
+      </li>
+      <br />
+      <li>
+        The best possible case would be a large bubble located in the
+        lower-right corner (high accuracy, low variation, minimal overfitting on
+        the provided training data). This is difficult to achieve with the basic
+        MLP Classifier we were using!
+      </li>
+      <br />
+      <li>Hover over each bubble to see additional model details.</li>
+    </ul>
+    <div>
+      <iframe src="./img/model-summary.html" width="940" height="940"> </iframe>
+    </div>
+  </body>
+</html>
